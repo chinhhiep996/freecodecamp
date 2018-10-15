@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-width: 290px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    font-family: 'Open Sans',Arial,sans-serif;
+    color: #4d4e53;
+}
+
+header {
+    font-size: 1.8em;
+    color: hsl(0, 0%, 0%);
+}
+
+#navbar {
+    width: 300px;
+    min-width: 290px;
+    height: 100%;
+    border-right: 3px solid hsl(180, 5%, 62%);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar header {
+    min-width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    padding-left: 40px;
+    border-right: 3px solid hsl(180, 5%, 62%);
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar li {
+    border-top: 1px solid hsl(230, 4%, 31%);
+    padding-left: 40px;
+    text-decoration: none;
+}
+
+#navbar a {
+    text-decoration-line: none;
+    color: #4d4e53;
+}
+
+/* CSS Content */
+
+#main-doc {
+    margin: 40px;
+    position: absolute;
+    margin-left: 310px;
+    padding-left: 20px;
+}
+
+.main-section article {
+    padding: 20px; 
+}
+
+p, li {
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 0.96em;
+}
+
+code {
+    display: block;
+    border: 1px solid hsl(0, 0%, 97%);
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-color: hsl(0, 0%, 97%);
+    white-space: pre;
+    text-align: left;
+    position: relative;
+    border-radius: 5px;
+    word-wrap: normal;
+    word-break: normal;
+}
+
+/* CSS Reponsive Web Design */
+
+@media (max-width: 800px) {
+    
+    #navbar {
+        position: relative;
+        width: 100%;
+        
+    }
+
+    #navbar header {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul {
+        height: 200px;
+        border: 1px solid hsl(230, 4%, 31%);
+        border-bottom: 3px solid hsl(230, 4%, 31%);
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
