@@ -1,0 +1,115 @@
+html, body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background-color: hsl(172, 36%, 75%);
+    text-align: center;
+    min-width: 420px;
+  }
+  
+  #title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  #survey-form {
+    border: 0px solid;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 5px;
+    width: 75%;
+    max-width: 900px;
+    margin: 30px auto 10px auto;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .rowTab {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-column-gap: 1.25em;
+    
+  }
+  
+  .labels {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    justify-self: end;
+    text-align: right;
+  }
+  
+  .rightTab {
+    justify-self: start;
+  }
+  
+  .input-field {
+    height: 20px;
+    width: 280px;
+    border: 1px solid hsl(0, 0%, 75%);
+    margin: 10px auto;
+    padding: 5px;
+  }
+  
+  #dropdown {
+    height: 40px;
+    width: 140px;
+    border: 1px solid hsl(0, 0%, 75%);
+    margin: 20px auto;
+    padding: 5px;
+  }
+  
+  ul {
+    list-style-position: outside;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0px;
+    
+  }
+  
+  li {
+    margin: 10px; 
+  }
+  
+  #comments {
+    width: 280px;
+    text-align: left;
+    margin: 10px auto;
+    padding: 5px;
+  }
+  
+  #submit {
+    background-color: hsl(203, 69%, 62%);
+    color: hsl(22, 100%, 98%);
+    width: 100px;
+    height: 40px;
+    border: 0px solid hsl(203, 69%, 62%);
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  
+  /* Responsive Web */
+  
+  @media (max-width: 830px) {
+    .input-field, #comments {
+    width: 30vw;
+  }
+  }
+  
+  
+  @media (max-width: 550px) {
+    .rowTab {
+      display: block;
+    }
+  
+    .labels, .rightTab {
+      text-align: left;
+      margin-left: 10px;
+    }
+  
+    .labels {
+      margin-left: 5px;
+    }
+  
+    .input-field, #comments {
+    width: 280px;
+  }
+  }
